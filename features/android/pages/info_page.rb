@@ -13,4 +13,9 @@ class InfoPage < Calabash::ABase
     end
   end
 
+  def go_back
+    press_back_button
+    page(LoginPage).await
+  end
+
 end

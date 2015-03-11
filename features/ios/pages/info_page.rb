@@ -15,4 +15,9 @@ class InfoPage < Calabash::IBase
     screenshot_embed
   end
 
+  def go_back
+    tap_mark 'Close'
+    page(LoginPage).await
+  end
+
 end
